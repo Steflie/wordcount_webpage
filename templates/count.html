@@ -1,0 +1,16 @@
+<h1> Count Words </h1>
+<h1>Text:</h1>
+{{ fulltext }}
+<h2>Number of words</h2>
+{{ num }}
+<h2>Each Word Count</h2>
+{%for word, each_count in word_dictionary%}
+
+{{word}} - {{each_count}}
+<br />
+
+{%endfor%}
+
+<br></br>
+
+<a href="{% url 'home' %}" >Count Again</a>
